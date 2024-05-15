@@ -52,14 +52,12 @@ public class Persona {
         boolean r = false;
         if (this == obj) { // indirizzo di memoria
             r = true;
-            if (obj instanceof Persona) { // istanza di persona
-                Persona p = (Persona) obj; // cast
-                if (this.nome.equals(p.nome) || this.età == p.età) { // attributi significativi
-                    r = true;
-                }
+        } else if (obj instanceof Persona) { // istanza di persona
+            Persona p = (Persona) obj; // cast
+            if (this.getNome().equals(p.getNome()) || this.getEtà() == p.getEtà()) { // attributi significativi
+                r = true;
             }
         }
         return r;
     }
-
 }

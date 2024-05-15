@@ -3,6 +3,7 @@ public class App {
         Persona p = new Persona("Umberto", 17, 10);
         Persona p1 = new Persona("Mattia", 16, 8);
         Persona p2 = new Persona("Genni", 60, 5);
+        Persona p3 = new Persona("Genni", 60, 5);
         System.out.println(p);
         System.out.println(p1.getNome());
         System.out.println(p2.getEtà());
@@ -12,7 +13,7 @@ public class App {
         classifica.addPersona(p1);
         System.out.println(classifica);
         classifica.killPersona("Umberto");
-        System.out.println("Classifica eliminata" +"\n" + classifica);
-
+        System.out.println("Classifica eliminata" + "\n" + classifica);
+        System.out.println(p1.equals(p3));
     }
 }
